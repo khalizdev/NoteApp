@@ -33,9 +33,9 @@ public class RecyclerItemTouchHelper extends ItemTouchHelper.SimpleCallback {
         final int position = viewHolder.getAdapterPosition();
         if (direction == ItemTouchHelper.LEFT) {
             AlertDialog.Builder builder = new AlertDialog.Builder(adapter.getContext());
-            builder.setTitle("Delete Task");
-            builder.setMessage("Are you sure you want to delete this Task?");
-            builder.setPositiveButton("Confirm",
+            builder.setTitle("Hapus Note");
+            builder.setMessage("Lanjutkan Untuk Menghapus note ? ");
+            builder.setPositiveButton("Ya",
                     new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
@@ -66,11 +66,11 @@ public class RecyclerItemTouchHelper extends ItemTouchHelper.SimpleCallback {
         int backgroundCornerOffset = 20;
 
         if (dX > 0) {
-            icon = ContextCompat.getDrawable(adapter.getContext(), R.drawable.ic_baseline_link_24);
-            background = new ColorDrawable(ContextCompat.getColor(adapter.getContext(), R.color.white));
+            icon = ContextCompat.getDrawable(adapter.getContext(), R.drawable.ic_baseline_text_fields_24);
+            background = new ColorDrawable(ContextCompat.getColor(adapter.getContext(), R.color.design_default_color_error));
         } else {
-            icon = ContextCompat.getDrawable(adapter.getContext(), R.drawable.ic_baseline_block_24);
-            background = new ColorDrawable(ContextCompat.getColor(adapter.getContext(), R.color.white));
+            icon = ContextCompat.getDrawable(adapter.getContext(), R.drawable.ic_baseline_restore_from_trash_24);
+            background = new ColorDrawable(ContextCompat.getColor(adapter.getContext(), R.color.design_default_color_error));
         }
 
         assert icon != null;

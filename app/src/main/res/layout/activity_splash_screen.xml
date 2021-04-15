@@ -11,12 +11,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:textSize="30dp"
-        android:textColor="#CA4545"
-        android:textStyle="bold"
         android:text="Note App"
+        android:textColor="#CA4545"
+        android:textSize="30dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.59000003" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/splashscreen"
+        app:layout_constraintEnd_toEndOf="@+id/splashscreen"
+        app:layout_constraintStart_toStartOf="@+id/splashscreen"
+        app:srcCompat="@drawable/notes" />
 </androidx.constraintlayout.widget.ConstraintLayout>
